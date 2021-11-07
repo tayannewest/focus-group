@@ -4,7 +4,9 @@ const userSchema = new mongoose.Schema(
   {
     email: String,
     googleId: String,
-    profile: {type: mongoose.Schema.Types.ObjectId, ref: "Profile"}
+    profile: {
+      type: mongoose.Schema.Types.ObjectId, 
+      ref: "Profile"}
   },
   {
     timestamps: true,

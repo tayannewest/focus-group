@@ -3,9 +3,12 @@ import mongoose from "mongoose"
 
 const ideaSchema = new mongoose.Schema({
   content: String,
-  goodIdea: Boolean,
-  contributor: {type: mongoose.Schema.Types.ObjectId, ref: "Profile"},
-}, {
+  contributor: {
+    type: mongoose.Schema.Types.ObjectId, 
+    ref: "Profile"},
+  reviews: [{type: mongoose.Schema.Types.ObjectId, ref: "Review"}]
+}, 
+{
   timestamps: true
 })
 

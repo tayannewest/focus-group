@@ -11,6 +11,8 @@ router.get('/', ideasCtrl.index)
 router.get('/new', ideasCtrl.new)
 // localhost:3000/ideas/:id
 router.get('/:id', ideasCtrl.show)
+// localhost:3000/ideas/:id/edit
+router.get('/:id', isLoggedIn, ideasCtrl.edit)
 // localhost:3000/ideas
 router.post('/', isLoggedIn, ideasCtrl.addFeature)
 

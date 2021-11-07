@@ -2,12 +2,13 @@ import mongoose from "mongoose"
 
 
 const reviewSchema = new mongoose.Schema({
-    review: String,
+    content: String,
     rating: {
       type: Number,
       min: 0,
       max: 5,
     },
+    goodIdea: Boolean,
   },
   {
     timestamps: true,

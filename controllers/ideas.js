@@ -18,11 +18,7 @@ function index(req, res) {
 
 function newIdea(req, res) {
   res.render("ideas/new", {
-    title: "Submit an Idea"
-  })
-  .catch(err => {
-    console.log(err)
-    res.redirect("/ideas")
+    title: "Submit an Idea",
   })
   .catch(err => {
     console.log(err)
@@ -31,7 +27,7 @@ function newIdea(req, res) {
 }
 
 function addFeature(req, res) {
-  req.body.owner = req.user.profile._id
+  req.body.contributor = req.user.profile._id
   req.body.goodIdea = !!req.body.goodIdea
   Idea.create(req.body)
   .then(idea => {
@@ -58,9 +54,15 @@ function show (req, res) {
   })
 }
 
+function edit(req, res) {
+  console.log('editttttttt')
+}
+
+
 export {
   index,
   newIdea as new,
   addFeature,
-  show
+  show,
+  edit
 }
