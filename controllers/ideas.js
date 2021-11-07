@@ -37,10 +37,30 @@ function addFeature(req, res) {
   .then(idea => {
     res.redirect("/ideas")
   })
+  .catch(err => {
+    console.log(err)
+    res.redirect("/ideas")
+  })
+}
+
+function show (req, res) {
+  Idea.findById(req.params.id)
+  .populate("contributor")
+  .then(idea => {
+    res.render("ideas/show", {
+      title: "Car Idea",
+      idea
+    })
+  })
+  .catch(err => {
+    console.log(err)
+    res.redirect("/ideas")
+  })
 }
 
 export {
   index,
   newIdea as new,
-  addFeature
+  addFeature,
+  show
 }

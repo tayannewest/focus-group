@@ -5,7 +5,9 @@
   <h1>get dunked on, <%= user ? user.profile.name : "friend" %></h1>
   <ul>
   <% ideas.forEach(idea => { %>
-    <li><%= idea.content %></li>
+    <li class="idea"><%= idea.content %> 
+      <a href="/ideas/<%= idea._id %>"><button>Review</button></a>
+    </li>
   <% }) %>
 </ul>
 </main>

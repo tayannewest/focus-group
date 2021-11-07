@@ -4,7 +4,7 @@ import mongoose from "mongoose"
 const ideaSchema = new mongoose.Schema({
   content: String,
   goodIdea: Boolean,
-  owner: {type: mongoose.Schema.Types.ObjectId, ref: "Profile"},
+  contributor: {type: mongoose.Schema.Types.ObjectId, ref: "Profile"},
 }, {
   timestamps: true
 })
