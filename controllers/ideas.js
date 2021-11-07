@@ -13,7 +13,9 @@ function index(req, res) {
 }
 
 function newIdea(req, res) {
-  console.log(Idea)
+  res.render("ideas/new", {
+    title: "Submit an Idea"
+  })
 }
 
 export {
