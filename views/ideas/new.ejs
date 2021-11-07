@@ -3,6 +3,21 @@
 
 <main>
   <h1>Submit an Idea</h1>
+  <section>
+    <% if (user) { %>
+      <h2>What are some features you'd love to see implemented in your ideal car?</h2>
+      <form action="/ideas" method="POST">
+        <label>
+          Feature: 
+          <input type="text" name="content" autocomplete="off">
+        </label>
+        <!-- <label> -->
+          <!-- Is this a good car idea?
+          <input type="checkbox" name="goodIdea"> -->
+        <!-- </label> -->
+        <button type="submit">Add feature</button>
+      </form>
+    <% } %>
 </main>
 
 <%- include('../partials/footer') %>

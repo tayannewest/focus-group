@@ -3,6 +3,11 @@
 
 <main>
   <h1>get dunked on, <%= user ? user.profile.name : "friend" %></h1>
+  <ul>
+  <% ideas.forEach(idea => { %>
+    <li><%= idea.content %></li>
+  <% }) %>
+</ul>
 </main>
 
 <%- include('../partials/footer') %>

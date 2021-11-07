@@ -20,6 +20,7 @@ import { router as authRouter } from './routes/auth.js'
 import { router as ideasRouter } from './routes/ideas.js'
 import { passUserToView } from './middleware/middleware.js'
 
+
 // create the express app
 const app = express()
 
