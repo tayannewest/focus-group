@@ -24,14 +24,23 @@ function newIdea(req, res) {
     console.log(err)
     res.redirect("/ideas")
   })
+  .catch(err => {
+    console.log(err)
+    res.redirect("/ideas")
+  })
 }
 
-function create(req, res) {
-  console.log("adddddddddd feature")
+function addFeature(req, res) {
+  req.body.owner = req.user.profile._id
+  req.body.goodIdea = !!req.body.goodIdea
+  Idea.create(req.body)
+  .then(idea => {
+    res.redirect("/ideas")
+  })
 }
 
 export {
   index,
   newIdea as new,
-  create
+  addFeature
 }

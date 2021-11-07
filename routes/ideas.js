@@ -11,7 +11,7 @@ router.get('/', ideasCtrl.index)
 router.get('/new', ideasCtrl.new)
 
 // localhost:3000/ideas
-router.post('/', isLoggedIn, ideasCtrl.create)
+router.post('/', isLoggedIn, ideasCtrl.addFeature)
 
 export {
   router
