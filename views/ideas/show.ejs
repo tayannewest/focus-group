@@ -44,11 +44,11 @@
               <td><%= review.createdAt.toLocaleDateString() %> </td>
               <td><%= review.content %></td>
               <td><%= review.goodIdea ? "good car idea" : "no good car idea" %> </td>
-              <td>
-                <form action="/ideas/<%= idea._id %>/reviews/<%= review._id %>?_method=DELETE" method="POST">
+              <!-- <td>
+                <form action="/ideas/<%#= idea._id %>/reviews/<%#= review._id %>?_method=DELETE" method="POST">
                   <button class="button">DELETE</button>
                   </form>
-              </td>
+              </td> -->
             </tr>
           <% }) %>
         </tbody>

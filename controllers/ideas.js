@@ -120,7 +120,6 @@ async function createReview(req, res) {
 
 function deleteReview(req, res) {
   console.log(req.params.id)
-  
 }
 
 export {
