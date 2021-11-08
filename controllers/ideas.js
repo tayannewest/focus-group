@@ -26,7 +26,7 @@ function newIdea(req, res) {
   })
 }
 
-function addFeature(req, res) {
+function addIdea(req, res) {
   req.body.contributor = req.user.profile._id
   req.body.goodIdea = !!req.body.goodIdea
   Idea.create(req.body)
@@ -55,14 +55,47 @@ function show (req, res) {
 }
 
 function edit(req, res) {
-  console.log('editttttttt')
+  Idea.findById(req.params.id)
+  .then(idea => {
+    res.render("ideas/edit", {
+      idea,
+      title: "Edit your Idea"
+    })
+  })
+  .catch(err => {
+    console.log(err)
+    res.redirect("/ideas")
+  })
 }
 
+function update(req, res) {
+console.log('ahhhhhhhh fix it later')
+}
+
+function deleteIdea(req, res) {
+  Idea.findByIdAndDelete(req.params.id)
+  .then(idea => {
+    if(idea.contributor.equals(req.user.profile._id)) {
+      idea.delete()
+      .then(() => {
+        res.redirect("/ideas")
+      })
+    } else {
+      throw new Error ("Uh oh, you're not allowed to do that here")
+    }
+  })
+  .catch(err => {
+    console.log(err)
+    res.redirect("/ideas")
+  })
+}
 
 export {
   index,
   newIdea as new,
-  addFeature,
+  addIdea,
   show,
-  edit
+  edit,
+  update,
+  deleteIdea as delete
 }

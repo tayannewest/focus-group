@@ -1,0 +1,18 @@
+<%- include('../partials/html-head') %>
+<%- include('../partials/nav') %>
+
+<main>
+  <section>
+    <h1>Edit your Idea</h1>
+    <form action="/ideas/<%= idea._id %>?_method=PUT" method="POST">
+      <label>
+        Feature: 
+        <input type="text" name="name" value="<%= idea.content %>" autocomplete="off"
+        >
+      </label>
+      <button type="submit">Save your Idea</button>
+    </form>
+  </section>
+</main>
+
+<%- include('../partials/footer') %>
