@@ -15,7 +15,6 @@ router.get('/:id', ideasCtrl.show)
 router.get('/:id/edit', isLoggedIn, ideasCtrl.edit)
 // localhost:3000/ideas - POST
 router.post('/', isLoggedIn, ideasCtrl.addIdea)
-
 // localhost:3000/ideas/:id - DELETE
 router.delete("/:id", ideasCtrl.delete)
 

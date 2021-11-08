@@ -18,12 +18,14 @@
   <section>
     <% if (user) { %>
       <h2>Got Feedback for this Idea?</h2>
+      <form action="/ideas/<%= idea._id %>/reviews" method="POST">
       <input type="text" name="review" placeholder="Add comment" autocomplete="off">
       <label>
         Is this a good car idea?
         <input type="checkbox" name="goodIdea">
       </label>
-      <button>Submit</button>
+        <button type="submit">Submit</button>
+      </form>
     <% } %>
   </section>
   <section>
@@ -33,7 +35,6 @@
           <tr>
             <th>Date</th>
             <th>Review</th>
-            <th>Rating</th>
             <th>Good idea?</th>
           </tr>
         </thead>
@@ -42,8 +43,7 @@
             <tr>
               <td><%= review.createdAt.toLocaleDateString() %> </td>
               <td><%= review.content %></td>
-              <td><%= review.rating %> </td>
-              <td><%= review.goodIdea %> </td>
+              <td><%= review.goodIdea ? "good car idea" : "no good car idea" %> </td>
               <td></td>
             </tr>
           <% }) %>
