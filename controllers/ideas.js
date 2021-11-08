@@ -68,34 +68,21 @@ function edit(req, res) {
   })
 }
 
-// function update(req, res) { 
-//   console.log("party")
-//   console.log(req.params.id)
-//   Idea.findById(req.params.id)
-//   .then(idea => {
-//     if(idea.contributor.equals(req.user.profile._id)) {
-//       console.log(req.body.name)
-//       req.body = !!req.body
-//       idea.updateOne(req.body, {new: true})
-//       console.log(req.body, "updated body")
-//       .then(() => {
-//         res.redirect(`/ideas/${idea._id}`)
-//       })
-//     } else {
-//       throw new Error ("Uh oh, you're not allowed to make that change here")
-//     }
-//   })
-//   .catch(err => {
-//     console.log(err)
-//     res.redirect("/ideas")
-//   })
-// }
-
-function update(req, res) {
-  console.log(req.body, req.params.id)
-  req.body = !!req.body
-  Idea.findByIdAndUpdate(req.params.id, req.body, function(err, idea) {
-    res.redirect(`/ideas/${idea._id}`)
+function update(req, res) { 
+  Idea.findById(req.params.id)
+  .then(idea => {
+    if(idea.contributor.equals(req.user.profile._id)) {
+      idea.updateOne(req.body, {new: true})
+      .then(() => {
+        res.redirect(`/ideas/${idea._id}`)
+      })
+    } else {
+      throw new Error ("Uh oh, you're not allowed to make that change here")
+    }
+  })
+  .catch(err => {
+    console.log(err)
+    res.redirect("/ideas")
   })
 }
 
