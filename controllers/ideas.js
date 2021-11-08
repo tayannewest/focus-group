@@ -1,5 +1,5 @@
 import { Idea } from "../models/idea.js"
-
+import { Review } from "../models/review.js"
 
 
 function index(req, res) {
@@ -41,7 +41,7 @@ function addIdea(req, res) {
 
 function show (req, res) {
   Idea.findById(req.params.id)
-  .populate("contributor")
+  .populate("reviews")
   .then(idea => {
     res.render("ideas/show", {
       title: "Car Idea",
@@ -104,7 +104,24 @@ function deleteIdea(req, res) {
   })
 }
 
+async function createReview(req, res) {
+  try {
+    req.body.goodIdea = !!req.body.goodIdea
+    const review = await Review.create(req.body)
+    const idea = await Idea.findById(req.params.id)
+    idea.reviews.push(review._id)
+    idea.save(() => {
+      res.redirect(`/ideas/${idea._id}`)
+    })
+  }  catch (error) {
+    console.log(error)
+  }
+}
 
+function deleteReview(req, res) {
+  console.log(req.params.id)
+  
+}
 
 export {
   index,
@@ -114,4 +131,6 @@ export {
   edit,
   update,
   deleteIdea as delete,
+  createReview,
+  deleteReview
 }

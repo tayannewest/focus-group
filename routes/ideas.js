@@ -17,7 +17,10 @@ router.get('/:id/edit', isLoggedIn, ideasCtrl.edit)
 router.post('/', isLoggedIn, ideasCtrl.addIdea)
 // localhost:3000/ideas/:id - DELETE
 router.delete("/:id", ideasCtrl.delete)
-
+// localhost:3000/ideas/:id/reviews
+router.post("/:id/reviews", isLoggedIn, ideasCtrl.createReview)
+// localhost:3000/ideas/:id - DELETE
+router.delete("/:id/reviews/:id", isLoggedIn, ideasCtrl.deleteReview)
 // localhost:3000/ideas/:id - PUT
 router.put("/:id", isLoggedIn, ideasCtrl.update)
 

@@ -19,11 +19,11 @@
     <% if (user) { %>
       <h2>Got Feedback for this Idea?</h2>
       <form action="/ideas/<%= idea._id %>/reviews" method="POST">
-      <input type="text" name="review" placeholder="Add comment" autocomplete="off">
-      <label>
-        Is this a good car idea?
-        <input type="checkbox" name="goodIdea">
-      </label>
+        <label>
+          This is a good car idea
+          <input type="checkbox" name="goodIdea">
+        </label>
+        <input type="text" name="content" placeholder="Add comment" autocomplete="off" required>
         <button type="submit">Submit</button>
       </form>
     <% } %>
@@ -39,17 +39,18 @@
           </tr>
         </thead>
         <tbody>
-          <% reviews.forEach(function(review){ %>
+          <% idea.reviews.forEach(function(review){ %>
             <tr>
               <td><%= review.createdAt.toLocaleDateString() %> </td>
               <td><%= review.content %></td>
               <td><%= review.goodIdea ? "good car idea" : "no good car idea" %> </td>
-              <td></td>
+              <td>
+                <form action="/ideas/<%= idea._id %>/reviews/<%= review._id %>?_method=DELETE" method="POST">
+                  <button class="button">DELETE</button>
+                  </form>
+              </td>
             </tr>
           <% }) %>
-          <!-- <tr>
-            <td colspan="2"></td>
-          </tr> -->
         </tbody>
       </table>
     <% } else { %>
