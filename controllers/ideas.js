@@ -107,6 +107,7 @@ function deleteIdea(req, res) {
 
 async function createReview(req, res) {
   try {
+    req.body.contributor = req.user.profile._id
     req.body.goodIdea = !!req.body.goodIdea
     const review = await Review.create(req.body)
     const idea = await Idea.findById(req.params.id)
@@ -120,7 +121,15 @@ async function createReview(req, res) {
 }
 
 function deleteReview(req, res) {
-  console.log(req.params.id)
+  // Review.findById(req.params.id)
+  // .then(review => {
+  //   if(review.contributor.equals(req.user.profile._id)) {
+  //     review.delete()
+  //     .then(() => {
+  //       res.redirect(`/ideas/${this.idea._id}`)
+  //     })
+  //   }
+  // })
 }
 
 export {

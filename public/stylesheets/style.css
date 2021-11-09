@@ -20,13 +20,13 @@ html {
 body {
   background-color: rgb(206, 131, 61);
   /* Use a system font, if none are available use an available sans-sarif font */
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+  font-family: 'Prompt', sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
         Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
   margin: 0;
 }
 
 nav {
-  background-color: white;
+  background-color: rgb(255, 242, 207);
   font-size: 1.6rem;
   display: flex;
   justify-content: center;
@@ -41,14 +41,17 @@ main {
 
 h1 {
   font-size: 3.6rem;
+  font-family: 'Shrikhand', cursive;
 }
 
 h2 {
   font-size: 3rem;
+  font-family: 'Shrikhand', cursive;
 }
 
 h3 {
   font-size: 2.4rem;
+  font-family: 'Bebas Neue', cursive;
 }
 
 ul {
@@ -68,7 +71,7 @@ section {
 }
 
 a {
-  color: goldenrod;
+  color: black;
 }
 
 pre {
@@ -82,6 +85,14 @@ nav > a {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+button {
+  font-family: 'Prompt', sans-serif;
+}
+
+input {
+  font-family: 'Prompt', sans-serif;
 }
 
 .btn {

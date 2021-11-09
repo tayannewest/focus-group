@@ -5,7 +5,7 @@
   <section>
     <h1>Here is where you see the details%></h1>
     <p><%= idea.content %> </p>
-    <p>Submitted by <%= idea.contributor.name %></p>
+    <p>Submitted by <%= idea.contributor %></p>
     <% if (idea.contributor.equals(user?.profile._id)) { %>
       <form action="/ideas/<%= idea._id %>/edit" method="GET">
         <button type="submit">Edit this Idea</button>
@@ -46,11 +46,11 @@
               <td><%= review.contributor %></td>
               <td><%= review.content %></td>
               <td><%= review.goodIdea ? "good car idea" : "no good car idea" %> </td>
-              <!-- <td>
-                <form action="/ideas/<%#= idea._id %>/reviews/<%#= review._id %>?_method=DELETE" method="POST">
+              <td>
+                <form action="/ideas/<%= idea._id %>/reviews/<%= review._id %>?_method=DELETE" method="POST">
                   <button class="button">DELETE</button>
                   </form>
-              </td> -->
+              </td>
             </tr>
           <% }) %>
         </tbody>
