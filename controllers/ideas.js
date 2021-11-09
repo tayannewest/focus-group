@@ -40,7 +40,7 @@ function addIdea(req, res) {
 
 function show (req, res) {
   Idea.findById(req.params.id)
-  .populate("reviews")
+  .populate(["reviews", "contributor"])
   .then(idea => {
     res.render("ideas/show", {
       title: "Car Idea",
@@ -111,6 +111,7 @@ async function createReview(req, res) {
     req.body.goodIdea = !!req.body.goodIdea
     const review = await Review.create(req.body)
     const idea = await Idea.findById(req.params.id)
+    // idea.reviews.populate("contributor")
     idea.reviews.push(review._id)
     idea.save(() => {
       res.redirect(`/ideas/${idea._id}`)
@@ -121,15 +122,22 @@ async function createReview(req, res) {
 }
 
 function deleteReview(req, res) {
-  // Review.findById(req.params.id)
-  // .then(review => {
-  //   if(review.contributor.equals(req.user.profile._id)) {
-  //     review.delete()
-  //     .then(() => {
-  //       res.redirect(`/ideas/${this.idea._id}`)
-  //     })
-  //   }
-  // })
+  console.log("oopsie doopsie")
+  Review.findById(req.params.id)
+  .then(review => {
+    if(review.contributor.equals(req.user.profile._id)) {
+      review.delete()
+      .then(() => {
+        res.redirect(`/ideas`)
+      })
+    }  else {
+      throw new Error ("Uh oh, you're not allowed to do that here")
+    }
+  })
+  .catch(err => {
+    console.log(err)
+    res.redirect("/ideas")
+  })
 }
 
 export {
