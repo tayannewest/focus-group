@@ -87,6 +87,12 @@ nav > a {
   justify-content: center;
 }
 
+a:hover {
+  background-color: rgb(206, 131, 61);
+  color: rgb(255, 242, 207);
+  border-radius: 5px;
+}
+
 button {
   font-family: 'Prompt', sans-serif;
   margin: 5px;
@@ -95,6 +101,7 @@ button {
 input {
   font-family: 'Prompt', sans-serif;
 }
+
 
 .btn {
   margin: 1.6rem 0;
