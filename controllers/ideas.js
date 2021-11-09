@@ -40,7 +40,13 @@ function addIdea(req, res) {
 
 function show (req, res) {
   Idea.findById(req.params.id)
-  .populate(["reviews", "contributor"])
+  .populate("reviews")
+  .populate({
+    path: "contributor",
+    populate: {
+      path: "name"
+    }
+  })
   .then(idea => {
     console.log(idea)
     res.render("ideas/show", {
@@ -54,6 +60,23 @@ function show (req, res) {
     res.redirect("/ideas")
   })
 }
+
+// function show (req, res) {
+//   Idea.findById(req.params.id)
+//   .populate(["reviews", "contributor"])
+//   .then(idea => {
+//     console.log(idea)
+//     res.render("ideas/show", {
+//       title: "Car Idea",
+//       idea,
+//     })
+//     console.log(idea.contributor.name)
+//   })
+//   .catch(err => {
+//     console.log(err)
+//     res.redirect("/ideas")
+//   })
+// }
 
 function edit(req, res) {
   Idea.findById(req.params.id)
