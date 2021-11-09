@@ -40,11 +40,11 @@ function addIdea(req, res) {
 
 function show (req, res) {
   Idea.findById(req.params.id)
-  .populate("reviews")
+  .populate("contributor")
   .populate({
-    path: "contributor",
+    path: "reviews",
     populate: {
-      path: "name"
+      path: "contributor"
     }
   })
   .then(idea => {
