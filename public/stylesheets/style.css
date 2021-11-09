@@ -42,6 +42,7 @@ main {
 h1 {
   font-size: 3.6rem;
   font-family: 'Shrikhand', cursive;
+  filter: drop-shadow(10px 8px 4px rgb(192, 54, 0));
 }
 
 h2 {
@@ -85,6 +86,7 @@ nav > a {
   display: flex;
   align-items: center;
   justify-content: center;
+  color: rgb(192, 54, 0);
 }
 
 a:hover {
