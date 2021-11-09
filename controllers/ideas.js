@@ -42,6 +42,7 @@ function show (req, res) {
   Idea.findById(req.params.id)
   .populate(["reviews", "contributor"])
   .then(idea => {
+    console.log(idea)
     res.render("ideas/show", {
       title: "Car Idea",
       idea,

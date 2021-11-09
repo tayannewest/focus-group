@@ -89,6 +89,7 @@ nav > a {
 
 button {
   font-family: 'Prompt', sans-serif;
+  margin: 5px;
 }
 
 input {
