@@ -111,7 +111,6 @@ async function createReview(req, res) {
     req.body.goodIdea = !!req.body.goodIdea
     const review = await Review.create(req.body)
     const idea = await Idea.findById(req.params.id)
-    // idea.reviews.populate("contributor")
     idea.reviews.push(review._id)
     idea.save(() => {
       res.redirect(`/ideas/${idea._id}`)
@@ -123,12 +122,13 @@ async function createReview(req, res) {
 
 function deleteReview(req, res) {
   console.log("oopsie doopsie")
+  const idea = Idea.findById(req.params.id)
   Review.findById(req.params.id)
   .then(review => {
     if(review.contributor.equals(req.user.profile._id)) {
       review.delete()
       .then(() => {
-        res.redirect(`/ideas`)
+        res.redirect(`/ideas/${idea._id}`)
       })
     }  else {
       throw new Error ("Uh oh, you're not allowed to do that here")
