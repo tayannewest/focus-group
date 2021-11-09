@@ -2,15 +2,25 @@
 <%- include('./partials/nav') %>
 
 <main>
-  <h1>I changed it, <%= user ? user.profile.name : "David" %></h1>
-  <% if (user?.profile.avatar) { %>
-    <div>
-      <img 
-        src="<%= user.profile.avatar %>" 
-        alt="<%= user.profile.name %> avatar"
-      >
-    </div>
-  <% } %>
+  <section>
+    <% if (user) { %>
+      <h2>We here at General Assembly would like to thank you all for agreeing to be a part of this focus group. </h2>
+    <% } else { %>
+      <h3>You have to log in to do cool stuff</h3>
+    <% } %> 
+  </section>
 </main>
 
 <%- include('./partials/footer') %>
+
+<!-- <main>
+  <h1>I changed it, <#%= user ? user.profile.name : "David" %></h1>
+  <#% if (user?.profile.avatar) { %>
+    <div>
+      <img 
+        src="<#%= user.profile.avatar %>" 
+        alt="<#%= user.profile.name %> avatar"
+      >
+    </div>
+  <#% } %>
+</main> -->

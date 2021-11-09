@@ -28,7 +28,6 @@ function newIdea(req, res) {
 
 function addIdea(req, res) {
   req.body.contributor = req.user.profile._id
-  req.body.goodIdea = !!req.body.goodIdea
   Idea.create(req.body)
   .then(idea => {
     res.redirect("/ideas")
@@ -45,8 +44,9 @@ function show (req, res) {
   .then(idea => {
     res.render("ideas/show", {
       title: "Car Idea",
-      idea
+      idea,
     })
+    console.log(idea.contributor.name)
   })
   .catch(err => {
     console.log(err)
@@ -61,6 +61,7 @@ function edit(req, res) {
       idea,
       title: "Edit your Idea"
     })
+    console.log(idea.contributor.name)
   })
   .catch(err => {
     console.log(err)

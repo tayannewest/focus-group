@@ -34,6 +34,7 @@
         <thead>
           <tr>
             <th>Date</th>
+            <th>Contributor</th>
             <th>Review</th>
             <th>Good idea?</th>
           </tr>
@@ -42,6 +43,7 @@
           <% idea.reviews.forEach(function(review){ %>
             <tr>
               <td><%= review.createdAt.toLocaleDateString() %> </td>
+              <td><%= review.contributor %></td>
               <td><%= review.content %></td>
               <td><%= review.goodIdea ? "good car idea" : "no good car idea" %> </td>
               <!-- <td>
