@@ -45,6 +45,7 @@ h1 {
   font-size: 3.6rem;
   font-family: 'Shrikhand', cursive;
   filter: drop-shadow(10px 7px 3px rgb(192, 54, 0));
+  margin: 30px;
 }
 
 h2 {
@@ -57,10 +58,6 @@ h3 {
   text-align: center;
   font-size: 2.4rem;
   font-family: 'Shrikhand', cursive;
-}
-
-ul {
-  list-style-type: none;
 }
 
 p, label, li, button, input {
@@ -140,4 +137,14 @@ input {
 
 .profile-header {
   font-size: 24px;
+}
+
+.detail-btn {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.feature-input {
+  display: flex;
+  justify-content: center;
 }
