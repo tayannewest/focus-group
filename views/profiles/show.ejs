@@ -13,10 +13,10 @@
   <% } %>
   <h1>It's <%= isSelf ? "you" : profile.name %>!</h1>
   <section>
-    <% if(profile.ideas.length) { %> 
-            <p><%= isSelf ? "you" : profile.name %> contributed <%= profile.ideas.length %> ideas to this focus group.</p>
+    <% if(isContributor.length) { %> 
+            <p><%= isSelf ? "you" : profile.name %> contributed <%= isContributor.length %> ideas to this focus group.</p>
     <% } else { %>
-      <p>No car ideas contributed from <%= isSelf ? "you" : profile.name %></p>
+      <h3>No car ideas contributed from <%= isSelf ? "you" : profile.name %></h3>
     <% } %> 
   </section>
 </main>

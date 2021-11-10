@@ -85,7 +85,6 @@ function edit(req, res) {
       idea,
       title: "Edit your Idea"
     })
-    console.log(idea.contributor.name)
   })
   .catch(err => {
     console.log(err)

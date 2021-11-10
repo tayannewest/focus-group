@@ -5,7 +5,7 @@ const profileSchema = new mongoose.Schema({
   name: String,
   avatar: String,
   ideas: [],
-  reviews: [],
+  reviews: [{type: mongoose.Schema.Types.ObjectId, ref: "Review"}],
 }, {
   timestamps: true
 })
