@@ -45,7 +45,7 @@
               <td><%= review.createdAt.toLocaleDateString() %> </td>
               <td><%= review.contributor.name %></td>
               <td><%= review.content %></td>
-              <td><%= review.goodIdea ? "good car idea" : "no good car idea" %> </td>
+              <td><%= review.goodIdea ? "good idea" : "no good idea" %> </td>
               <td>
                 <form action="/ideas/<%= idea._id %>/reviews/<%= review._id %>?_method=DELETE" method="POST">
                   <button>DELETE</button>

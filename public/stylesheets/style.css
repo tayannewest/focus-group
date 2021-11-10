@@ -75,11 +75,14 @@ section {
 th {
   font-size: 20px;
   text-align: left;
-  padding: 0px 20px 10px 0px;
+  padding: 5px 10px 5px 10px;
+  background-color: rgba(192, 54, 0, 0.3);
 }
 
 td {
   font-size: 1.8rem;
+  padding: 5px 10px 5px 10px;
+  background-color: rgba(192, 54, 0, 0.3);
 }
 
 a {
@@ -91,7 +94,7 @@ pre {
 }
 
 nav > a {
-  margin: 1rem 3rem;
+  margin: 1rem 2rem;
   text-decoration: none;
   font-size: 2.4rem;
   display: flex;
@@ -133,6 +136,15 @@ input {
 
 .profile-avatar {
   margin-top: 50px;
+  border-radius: 50%;
+}
+
+.card-img-top {
+  border-radius: 50%;
+}
+
+.card-title {
+  text-align: center;
 }
 
 .profile-header {
