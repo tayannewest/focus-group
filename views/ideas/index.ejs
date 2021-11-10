@@ -14,7 +14,7 @@
     <% ideas.forEach(idea => { %>
       <tr>
         <td><i class="fas fa-lightbulb"></i> <%= idea.content %></td> 
-        <td class="detail-btn"><a href="/ideas/<%= idea._id %>"><button>Details</button></a></td>
+        <td class="detail-btn"><a href="/ideas/<%= idea._id %>" class="btn-link"><button>Details</button></a></td>
       </tr>
     <% }) %>
   </tbody>

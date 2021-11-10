@@ -87,6 +87,7 @@ td {
 
 a {
   color: rgb(70, 16, 0);
+  padding: 0px 3px 0px 3px;
 }
 
 pre {
@@ -101,7 +102,6 @@ nav > a {
   align-items: center;
   justify-content: center;
   color: rgb(192, 54, 0);
-  padding: 0px 3px 0px 3px;
 }
 
 a:hover {
@@ -126,6 +126,15 @@ button:hover {
 
 input {
   font-family: 'Prompt', sans-serif;
+}
+
+form {
+  display: flex;
+  align-items: center;
+}
+
+.btn-link:hover {
+  background: transparent;
 }
 
 .link {
@@ -153,10 +162,14 @@ input {
 
 .detail-btn {
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
 }
 
 .feature-input {
   display: flex;
   justify-content: center;
+}
+
+.feature-header {
+  font-size: 24px;
 }

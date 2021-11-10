@@ -4,7 +4,7 @@
 <main>
   <section>
     <h1>Here is where you see the details%></h1>
-    <p><%= idea.content %> </p>
+    <p class="feature-header"><%= idea.content %> </p>
     <p>Submitted by <%= idea.contributor.name %></p>
     <% if (idea.contributor.equals(user?.profile._id)) { %>
       <form action="/ideas/<%= idea._id %>/edit" method="GET">
