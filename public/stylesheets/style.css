@@ -137,3 +137,7 @@ input {
 .profile-avatar {
   margin-top: 50px;
 }
+
+.profile-header {
+  font-size: 24px;
+}

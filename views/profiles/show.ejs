@@ -14,7 +14,14 @@
   <h1>It's <%= isSelf ? "you" : profile.name %>!</h1>
   <section>
     <% if(isContributor.length) { %> 
-            <p><%= isSelf ? "you" : profile.name %> contributed <%= isContributor.length %> ideas to this focus group.</p>
+            <p class="profile-header"><%= isSelf ? "You" : profile.name %> contributed <%= isContributor.length %> ideas to this focus group!</p>
+            <ul>
+              <% isContributor.forEach(function(review) { %> 
+                <li>
+                  <a href="/ideas/<%= review._id %>"><%= review.content %></a>
+                </li>
+                <% }) %> 
+            </ul>
     <% } else { %>
       <h3>No car ideas contributed from <%= isSelf ? "you" : profile.name %></h3>
     <% } %> 
