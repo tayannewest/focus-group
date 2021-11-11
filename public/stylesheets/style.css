@@ -89,20 +89,12 @@ th {
   border-radius: 5px;
 }
 
-tr {
-  height: fixed;
-  line-height:225%;
-}
-
 td {
   font-size: 1.8rem;
   padding: 5px 10px 5px 10px;
   background-color: rgba(192, 54, 0, 0.3);
   border-radius: 5px;
   height: inherit;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
 }
 
 ul {
@@ -209,8 +201,7 @@ iframe {
 }
 
 .detail-btn-container {
-  display: flex;
-  justify-content: center;
+  text-align: center;
   height: 100%;
 }
 
