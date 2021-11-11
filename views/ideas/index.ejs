@@ -8,14 +8,14 @@
     <thead>
       <tr>
         <th>Proposed Feature</th>
-        <th>Take a Closer Look</th>
+        <th class="detail-head">Take a Closer Look</th>
       </tr>
   </thead>
   <tbody>
     <% ideas.forEach(idea => { %>
       <tr>
         <td><i class="fas fa-lightbulb"></i> <%= idea.content %></td> 
-        <td class="detail-btn"><a href="/ideas/<%= idea._id %>" class="btn-link"><button>Details</button></a></td>
+        <td class="detail-btn-container"><a href="/ideas/<%= idea._id %>" class="btn-link"><button class="detail-btn">Details</button></a></td>
       </tr>
     <% }) %>
   </tbody>

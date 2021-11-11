@@ -6,19 +6,19 @@
   <nav>
     <a href="/videos"><i class="fas fa-car"></i></a>
 
-    <a href="/ideas/new"><span i class="fas fa-lightbulb icon"></i></a>
+    <a href="/ideas/new" class="nav-link"><span i class="fas fa-lightbulb icon"></i></a>
 
     <a href="/ideas/new" class="button-text">Submit an Idea</a>
 
-    <a href="/ideas"><span i class="fas fa-clipboard-list icon"></i></a>
+    <a href="/ideas" class="nav-link"><span i class="fas fa-clipboard-list icon"></i></a>
 
     <a href="/ideas" class="button-text"></i>View all Ideas</a>
 
-    <a href="/profiles"><span i class="fas fa-user-friends icon"></i></a>
+    <a href="/profiles" class="nav-link"><span i class="fas fa-user-friends icon"></i></a>
 
     <a href="/profiles" class="button-text">View Profiles</a>
     <% if (user) { %>
-      <a href="/auth/logout"><span i class="fas fa-sign-out-alt icon"></i></a>
+      <a href="/auth/logout" class="nav-link"><span i class="fas fa-sign-out-alt icon"></i></a>
       <a href="/auth/logout" class="button-text"></i>Log Out</a>
     <% } else { %>
       <a href="/auth/google" class="siwg-link">

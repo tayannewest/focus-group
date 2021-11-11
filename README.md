@@ -34,11 +34,11 @@ Tim Robinson's comedy series "I Think You Should Leave" has entirely consumed my
 * EJS
 * MongoDB
 * CSS
-* HTML
 * Google Fonts
 * Animate.css
 * Fontawesome.com
 * Youtube.com
+* Procreate
 
 # Original Wireframe and Planning Concept
 https://whimsical.com/focus-group-JDqHzytVd1H6rREFPes6X1 
