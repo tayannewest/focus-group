@@ -112,6 +112,13 @@ ul {
   padding: 25px;
 }
 
+.index-page {
+  background-color: rgba(192, 54, 0, 0.5);
+  border-radius: 10px;
+  padding: 20px;
+  margin: 50px;
+}
+
 a {
   color: rgb(70, 16, 0);
   padding: 0px 3px 0px 3px;

@@ -4,8 +4,8 @@ Thank you for agreeing to participate in this focus group! The goal is to genera
 # Background
 Tim Robinson's comedy series "I Think You Should Leave" has entirely consumed my life, and the only way to break the curse is to submit this glorified meme as a completed project.
 
-# Give It A Shot!
-
+# Thank you for participating!
+https://good-car-ideas.herokuapp.com/
 
 # Visuals
 
