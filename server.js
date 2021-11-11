@@ -19,6 +19,7 @@ import { router as indexRouter } from './routes/index.js'
 import { router as authRouter } from './routes/auth.js'
 import { router as ideasRouter } from './routes/ideas.js'
 import { router as profilesRouter } from './routes/profiles.js'
+import { router as videosRouter } from './routes/videos.js'
 import { passUserToView } from './middleware/middleware.js'
 
 
@@ -66,6 +67,7 @@ app.use('/', indexRouter)
 app.use('/auth', authRouter)
 app.use('/ideas', ideasRouter)
 app.use('/profiles', profilesRouter)
+app.use('/videos', videosRouter)
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {

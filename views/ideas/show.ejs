@@ -3,11 +3,11 @@
 
 <main>
   <section>
-    <h1>Here is where you see the details%></h1>
-    <p class="feature-header"><%= idea.content %> </p>
-    <p>Submitted by <%= idea.contributor.name %></p>
+    <h1 class="animate__animated animate__slideInLeft">Here is where you see the details%></h1>
+    <p class="feature-header animate__animated animate__slideInRight"><%= idea.content %> </p>
+    <p class="animate__animated animate__slideInRight">Submitted by <%= idea.contributor.name %></p>
     <% if (idea.contributor.equals(user?.profile._id)) { %>
-      <form action="/ideas/<%= idea._id %>/edit" method="GET">
+      <form class="animate__animated animate__slideInRight" action="/ideas/<%= idea._id %>/edit" method="GET">
         <button type="submit">Edit this Idea</button>
       </form>
       <form action="/ideas/<%= idea._id %>?_method=DELETE" method="POST">
@@ -17,7 +17,7 @@
   </section>
   <section>
     <% if (user) { %>
-      <h2>Got Feedback for this Idea?</h2>
+      <h2 class="animate__animated animate__slideInLeft">Got Feedback for this Idea?</h2>
       <form action="/ideas/<%= idea._id %>/reviews" method="POST">
         <label>
           This is a good car idea
@@ -30,7 +30,7 @@
   </section>
   <section>
     <% if(idea.reviews.length) { %> 
-      <table>
+      <table class="animate__animated animate__slideInLeft">
         <thead>
           <tr>
             <th>Date</th>

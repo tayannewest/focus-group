@@ -61,23 +61,6 @@ function show (req, res) {
   })
 }
 
-// function show (req, res) {
-//   Idea.findById(req.params.id)
-//   .populate(["reviews", "contributor"])
-//   .then(idea => {
-//     console.log(idea)
-//     res.render("ideas/show", {
-//       title: "Car Idea",
-//       idea,
-//     })
-//     console.log(idea.contributor.name)
-//   })
-//   .catch(err => {
-//     console.log(err)
-//     res.redirect("/ideas")
-//   })
-// }
-
 function edit(req, res) {
   Idea.findById(req.params.id)
   .then(idea => {
@@ -163,6 +146,7 @@ function deleteReview(req, res) {
   })
 }
 
+
 export {
   index,
   newIdea as new,
@@ -172,5 +156,5 @@ export {
   update,
   deleteIdea as delete,
   createReview,
-  deleteReview
+  deleteReview,
 }

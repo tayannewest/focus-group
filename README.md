@@ -1,5 +1,5 @@
 # Welcome to the Focus Group
-
+Thank you for agreeing to participate in the General Assembly 
 
 # Background
 

@@ -2,11 +2,12 @@
 <%- include('../partials/nav') %>
 
 <main>
-  <h1>Submit an Idea</h1>
+  <% if (user) { %>
+  <h1 class="animate__animated animate__slideInRight">Submit an Idea</h1>
   <section>
     <% if (user) { %>
-      <h2>What are some features you'd love to see implemented in your ideal car? There are no wrong answers!</h2>
-      <form action="/ideas" method="POST" class="feature-input">
+      <h2 class="animate__animated animate__slideInLeft">What are some features you'd love to see implemented in your ideal car? There are no wrong answers!</h2>
+      <form action="/ideas" method="POST" class="feature-input animate__animated animate__slideInRight">
         <label>
           Feature: 
           <input type="text" name="content" autocomplete="off" placeholder="Whenever you're ready">
@@ -15,6 +16,9 @@
       </form>
     <% } %>
     </section>
+    <% } else { %>
+      <h1>You have to log in to do cool stuff</h1>
+    <% } %> 
 </main>
 
 <%- include('../partials/footer') %>

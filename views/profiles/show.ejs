@@ -5,14 +5,14 @@
   <% if (profile.avatar) { %>
     <div>
       <img 
-        class="profile-avatar"
+        class="profile-avatar animate__animated animate__slideInRight"
         src="<%= profile.avatar %>" 
         alt="<%= profile.name %> avatar"
       >
     </div>
   <% } %>
-  <h1>It's <%= isSelf ? "you" : profile.name %>!</h1>
-  <section>
+  <h1 class="animate__animated animate__slideInLeft">It's <%= isSelf ? "you" : profile.name %>!</h1>
+  <section class="animate__animated animate__slideInRight">
     <% if(isContributor.length) { %> 
             <p class="profile-header"><%= isSelf ? "You" : profile.name %> contributed <%= isContributor.length %> ideas to this focus group!</p>
             <ul>
@@ -25,6 +25,7 @@
     <% } else { %>
       <h3>No car ideas contributed from <%= isSelf ? "you" : profile.name %></h3>
     <% } %> 
+      <h1>You have to log in to do cool stuff</h1>
   </section>
 </main>
 
