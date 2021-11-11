@@ -46,3 +46,5 @@ https://trello.com/b/PkyFJjW1/focus-group
 
 # Credits
 * Ruben's profile photo is an image of the incomparable Ruben Rabasa from S1:E3 of "I Think You Should Leave with Tim Robsinson"
+* The background image is an edited screenshot of one of the transition sequences from "I Think You Should Leave with Tim Robsinson"
+* And of course, the embedded video is the sketch that rocked the nation, as featured on the Netflix Is A Joke channel
