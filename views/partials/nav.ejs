@@ -5,11 +5,21 @@
 <body>
   <nav>
     <a href="https://www.youtube.com/watch?v=8YDpvMYk5jA&ab_channel=NetflixIsAJoke"><i class="fas fa-car"></i></i></a>
-    <a href="/ideas/new">Submit an Idea</a>
-    <a href="/ideas">View all Ideas</a>
-    <a href="/profiles">View Profiles</a>
+
+    <a href="/ideas/new"><span i class="fas fa-lightbulb icon"></i></a>
+
+    <a href="/ideas/new" class="button-text">Submit an Idea</a>
+
+    <a href="/ideas"><span i class="fas fa-clipboard-list icon"></i></a>
+
+    <a href="/ideas" class="button-text"></i>View all Ideas</a>
+
+    <a href="/profiles"><span i class="fas fa-user-friends icon"></i></a>
+
+    <a href="/profiles" class="button-text">View Profiles</a>
     <% if (user) { %>
-      <a href="/auth/logout">Log Out</a>
+      <a href="/auth/logout"><span i class="fas fa-sign-out-alt icon"></i></a>
+      <a href="/auth/logout" class="button-text"></i>Log Out</a>
     <% } else { %>
       <a href="/auth/google" class="siwg-link">
         <button type="submit" class="siwg">

@@ -95,7 +95,7 @@ pre {
 }
 
 nav > a {
-  margin: 1rem 2rem;
+  margin: 1rem 1rem;
   text-decoration: none;
   font-size: 2.4rem;
   display: flex;
@@ -172,4 +172,23 @@ form {
 
 .feature-header {
   font-size: 24px;
+}
+
+
+@media only screen and (min-width: 851px) {}
+span.icon {
+  display: none;
+}
+
+
+@media only screen and (max-width: 850px) {
+  
+.button-text {
+  display: none;
+}
+
+span.icon {
+  display: inline-block;
+}
+
 }

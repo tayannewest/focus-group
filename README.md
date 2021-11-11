@@ -1,72 +1,52 @@
-# MEN Stack with OAuth Template
+# Welcome to the Focus Group
 
-This is a MEN Stack template that includes OAuth.
 
-Use this to go build things! 🚀
+# Background
 
-## To Use This Template
 
-__Replace `<name-of-your-app-here>` in the commands below with the name of your app!__
+# How To Play
 
-```bash
-git clone https://github.com/SEI-Remote/men-stack-oauth-template.git <name-of-your-app-here>
-cd <name-of-your-app-here>
-```
 
-Once you are in the project directory:
+# Give It A Shot!
 
-```bash
-rm -rf .git
-```
 
-Here's what your command line output should like after this step (note that the indicator that we are in a git repository is gone!)
+# Visuals
 
-<img src="https://i.imgur.com/L47kNOZ.png" alt="The command line before and after running the rm -rf .git command. Before git:(main) is visible indiating that the directory contains a git repository, after the command it is not.">
+| Will you keep him happy? | Or make him angry? |
+| :---------: | :---------: |
+|![game play gif](images/happy.gif "Winning sprite") | ![game play gif](images/angry.gif "Losing sprite")
 
-Re-initialize a git repository:
+|Light Mode | Dark Mode |
+| :---------: | :---------: |
+|![light mode](images/light-mode.png "Light mode")|![dark mode](images/dark-mode.png "Dark mode")
 
-```bash
-git init
-```
+|Game Play Preview|
+| :---------: |
+|![game play screen](images/gameplay.png "Game play display")|
 
-Use the GitHub CLI to create a new project repository on GitHub:
 
-```bash
-gh repo create <name-of-your-app-here>
-```
+# Planned Improvements
+* Improve mobile layout
+* Add a light/dark mode option
+* Build the ability to reply to reviews in threads
+* Add search functionality
 
-Run npm i to fetch the template's dependencies:
+# Built With
+* HTML
+* CSS
+* JavaScript
+* Mongoose
+* EJS
+* MongoDB
+* Bootstrap
+* Google Fonts
+* Animate.css
+* Fontawesome.com
+* Whimsical.com
 
-```bash
-npm i
-```
+# Original Wireframe Concept
+https://whimsical.com/renannymation-NCMtTXxfa8jzgmiaB13eWR
 
-Then, make an initial commit:
-
-```bash
-git add .
-git commit -m "initial commit"
-git push -u origin main
-```
-
-touch a .env file:
-
-```bash
-touch .env
-```
-
-Fill it with the following:
-
-```
-DATABASE_URL=XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
-GOOGLE_CALLBACK=http://localhost:3000/auth/google/oauth2callback
-GOOGLE_CLIENT_ID=XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
-GOOGLE_SECRET=XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
-SESSION_SECRET=XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
-```
-
-Replace the `DATABASE_URL`, `GOOGLE_CLIENT_ID`, `GOOGLE_SECRET`, and `SESSION_SECRET` with values that you provide.
-
-Delete this README.md
-
-You're done!
+# Credits
+* Background and win music from https://www.FesliyanStudios.com
+* Gameplay sound effects and loss music from https://mixkit.co/
