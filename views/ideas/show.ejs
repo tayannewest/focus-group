@@ -8,11 +8,11 @@
     <p class="animate__animated animate__slideInRight">Submitted by <%= idea.contributor.name %></p>
     <% if (idea.contributor.equals(user?.profile._id)) { %>
       <form class="animate__animated animate__slideInRight" action="/ideas/<%= idea._id %>/edit" method="GET">
-        <button type="submit">Edit this Idea</button>
+        <button class="user-detail-btn" type="submit">Edit this Idea</button>
       </form>
       <div class="animate__animated animate__slideInRight" >
       <form action="/ideas/<%= idea._id %>?_method=DELETE" method="POST">
-        <button type="submit">Delete this Idea</button>
+        <button class="user-detail-btn" type="submit">Delete this Idea</button>
       </form>
     </div>
     <% } %>

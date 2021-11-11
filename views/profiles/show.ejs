@@ -12,9 +12,9 @@
     </div>
   <% } %>
   <h1 class="animate__animated animate__slideInLeft">It's <%= isSelf ? "you" : profile.name %>!</h1>
-  <section class="animate__animated animate__slideInRight">
+  <section class="animate__animated animate__slideInRight profile">
     <% if(isContributor.length) { %> 
-            <p class="profile-header"><%= isSelf ? "You" : profile.name %> contributed <%= isContributor.length %> ideas to this focus group!</p>
+            <h2 class="profile-header"><%= isSelf ? "You" : profile.name %> contributed <%= isContributor.length %> ideas to this focus group!</h2>
             <ul>
               <% isContributor.forEach(function(review) { %> 
                 <li>
