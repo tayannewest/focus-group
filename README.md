@@ -1,11 +1,8 @@
 # Welcome to the Focus Group
-Thank you for agreeing to participate in the General Assembly 
+Thank you for agreeing to participate in this focus group! The goal is to generate ideas that could be used collaboratively to create an ideal car. You're welcome to submit any ideas that you feel would be useful to you as a consumer. You're also invited to weigh in and review other users' ideas; this will help us get a feel for what is broadly appealing and should be the standard vs what might be a good optional add-on feature.
 
 # Background
-
-
-# How To Play
-
+Tim Robinson's comedy series "I Think You Should Leave" has entirely consumed my life, and the only way to break the curse is to submit this glorified meme as a completed project.
 
 # Give It A Shot!
 
@@ -32,21 +29,20 @@ Thank you for agreeing to participate in the General Assembly
 * Add search functionality
 
 # Built With
-* HTML
-* CSS
 * JavaScript
 * Mongoose
 * EJS
 * MongoDB
-* Bootstrap
+* CSS
+* HTML
 * Google Fonts
 * Animate.css
 * Fontawesome.com
-* Whimsical.com
+* Youtube.com
 
-# Original Wireframe Concept
-https://whimsical.com/renannymation-NCMtTXxfa8jzgmiaB13eWR
+# Original Wireframe and Planning Concept
+https://whimsical.com/focus-group-JDqHzytVd1H6rREFPes6X1 
+https://trello.com/b/PkyFJjW1/focus-group
 
 # Credits
-* Background and win music from https://www.FesliyanStudios.com
-* Gameplay sound effects and loss music from https://mixkit.co/
+* Ruben's profile photo is an image of the incomparable Ruben Rabasa from S1:E3 of "I Think You Should Leave with Tim Robsinson"

@@ -18,7 +18,10 @@ html {
 }
 
 body {
-  background-color: rgb(206, 131, 61);
+  background-image: url(https://i.imgur.com/BtW9dqO.png);
+  /* background-image: url(https://i.postimg.cc/M6bv5tTV/Screen-Shot-2021-11-11-at-11-56-39-AM.png); */
+/* background-size: cover; */
+  /* background-color: rgb(206, 131, 61); */
   color: rgb(70, 16, 0);
   /* Use a system font, if none are available use an available sans-sarif font */
   font-family: 'Prompt', sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
@@ -45,7 +48,7 @@ h1 {
   font-size: 3.6rem;
   font-family: 'Shrikhand', cursive;
   filter: drop-shadow(10px 7px 3px rgb(192, 54, 0));
-  margin: 30px;
+  margin: 50px, 30px, 30px, 30px;
 }
 
 h2 {
@@ -197,6 +200,10 @@ span.icon {
 span.icon {
   display: inline-block;
   margin: 0px 10px 0px 10px;
+}
+
+.review-mobile {
+  display: block
 }
 
 }
