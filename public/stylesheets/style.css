@@ -179,6 +179,13 @@ iframe {
   text-align: center;
 }
 
+.container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  text-align: center;
+}
+
 .profile-avatar {
   margin-top: 50px;
   border-radius: 50%;

@@ -4,20 +4,17 @@
 <main class="bg-light">
   <% if (user) { %>
   <h1 class="animate__animated animate__slideInLeft">Valued Focus Group Contributors</h1>
-  <div class="container py-5 px-3">
-    <div 
-      class="row row-cols-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5 g1 px-4"
-    >
+  <div class="container">
       <% profiles.forEach(profile => { %>
         <div class="col animate__animated animate__slideInRight">
           <a class="text-decoration-none" href="/profiles/<%= profile._id %>">
-            <div class="card mb-4 shadow-sm">
+            <div class="card">
               <% if (profile.avatar) { %>
                 <img
                   class="card-img-top"
                   src="<%= profile.avatar %>"
                   alt="<%= profile.name %>'s avatar"
-                  width="100%"
+                  width="100px"
                 />
               <% } else {%>
                 <img
@@ -34,7 +31,6 @@
           </a>
         </div>
       <% }) %>
-    </div>
   </div>
   <% } else { %>
     <h1>You have to log in to do cool stuff</h1>
