@@ -98,7 +98,8 @@ td {
 
 ul {
   list-style-type: none;
-  background-color: rgba(192, 54, 0, 0.5);
+  /* background-color: rgba(192, 54, 0, 0.5); */
+  background-color: rgba(255, 242, 207, 0.5);
   border-radius: 10px;
   padding: 25px;
 }
