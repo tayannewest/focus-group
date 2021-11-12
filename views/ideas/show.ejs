@@ -3,7 +3,7 @@
 
 <main>
   <section>
-    <h1 class="animate__animated animate__slideInLeft">Here is where you see the details%></h1>
+    <h1 class="animate__animated animate__slideInLeft">Let's Take a Closer Look</h1>
     <p class="feature-header animate__animated animate__slideInRight"><%= idea.content %> </p>
     <p class="animate__animated animate__slideInRight">Submitted by <%= idea.contributor.name %></p>
     <% if (idea.contributor.equals(user?.profile._id)) { %>
@@ -50,8 +50,8 @@
               <td><%= review.contributor.name %></td>
               <td><%= review.content %></td>
               <td><%= review.goodIdea ? "good idea" : "no good idea" %> </td>
-              <td>
-                <form action="/ideas/<%= idea._id %>/reviews/<%= review._id %>?_method=DELETE" method="POST">
+              <td class="table-btn-container">
+                <form action="/ideas/<%= idea._id %>/reviews/<%= review._id %>?_method=DELETE" method="POST" class="table-delete-btn">
                   <button>DELETE</button>
                   </form>
               </td>

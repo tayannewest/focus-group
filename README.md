@@ -9,17 +9,13 @@ https://good-car-ideas.herokuapp.com/
 
 # Visuals
 
-| Will you keep him happy? | Or make him angry? |
-| :---------: | :---------: |
-|![game play gif](images/happy.gif "Winning sprite") | ![game play gif](images/angry.gif "Losing sprite")
-
-|Light Mode | Dark Mode |
-| :---------: | :---------: |
-|![light mode](images/light-mode.png "Light mode")|![dark mode](images/dark-mode.png "Dark mode")
-
-|Game Play Preview|
+|Welcome Screen|
 | :---------: |
-|![game play screen](images/gameplay.png "Game play display")|
+|![game play screen](https://i.imgur.com/oFU7Oft.png "Welcome screen")|
+
+| Share an Idea! | Leave a Review! |
+| :---------: | :---------: |
+|![submission page screenshot](https://i.imgur.com/AHx2Fw0.png "Idea sbumission page") | ![idea detail screenshot](https://i.imgur.com/bfZoNke.png "Detailed review")
 
 
 # Planned Improvements
