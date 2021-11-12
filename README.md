@@ -19,7 +19,7 @@ https://good-car-ideas.herokuapp.com/
 
 | View other user profiles | See what they have contributed |
 | :---------: | :---------: |
-|![profile index](https://i.imgur.com/XqE4pcq.png "Idea submission page") | ![individual user profile](https://i.imgur.com/eZ6d1g4.png "profile page detail")
+|![profile index](https://i.imgur.com/XqE4pcq.png "Idea submission page") | ![individual user profile](https://i.imgur.com/FkObhXQ.png "profile page detail")
 
 # Planned Improvements
 * Improve mobile layout
