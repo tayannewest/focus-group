@@ -13,10 +13,13 @@ https://good-car-ideas.herokuapp.com/
 | :---------: |
 |![game play screen](https://i.imgur.com/oFU7Oft.png "Welcome screen")|
 
-| Share an Idea! | Leave a Review! |
+| Share an idea! | Leave a review! |
 | :---------: | :---------: |
 |![submission page screenshot](https://i.imgur.com/AHx2Fw0.png "Idea sbumission page") | ![idea detail screenshot](https://i.imgur.com/bfZoNke.png "Detailed review")
 
+| View other user profiles | See what they have contributed |
+| :---------: | :---------: |
+|![profile index](https://i.imgur.com/XqE4pcq.png "Idea submission page") | ![individual user profile](https://i.imgur.com/eZ6d1g4.png "profile page detail")
 
 # Planned Improvements
 * Improve mobile layout
