@@ -186,6 +186,7 @@ iframe {
 
 .card-img-top {
   border-radius: 50%;
+  size: 100%;
 }
 
 .card-title {
@@ -261,6 +262,13 @@ span.icon {
 
 @media only screen and (max-width: 850px) {
   
+  body {
+    background-image: url(https://i.imgur.com/BtW9dqO.png);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-color: rgb(176, 115, 79);
+  }
+
   table {
     width: 95vw;
   }
@@ -286,7 +294,7 @@ span.icon {
   
   span.icon {
     display: inline-block;
-    margin: 0px 10px 0px 10px;
+    margin: 0px 5px 0px 5px;
   }
 
   .table-btn {
