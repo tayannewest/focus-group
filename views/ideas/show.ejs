@@ -5,7 +5,7 @@
   <section>
     <h1 class="animate__animated animate__slideInLeft">Let's Take a Closer Look</h1>
     <p class="feature-header animate__animated animate__slideInRight"><%= idea.content %> </p>
-    <p class="animate__animated animate__slideInRight">Submitted by <%= idea.contributor.name %></p>
+    <p class="animate__animated animate__slideInRight feature-contributor">Submitted by <%= idea.contributor.name %></p>
     <% if (idea.contributor.equals(user?.profile._id)) { %>
       <form class="animate__animated animate__slideInRight" action="/ideas/<%= idea._id %>/edit" method="GET">
         <button class="user-detail-btn" type="submit">Edit this Idea</button>

@@ -215,6 +215,15 @@ iframe {
 
 .feature-header {
   font-size: 24px;
+  background-color: rgba(255, 242, 207, 0.5);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.feature-contributor {
+  background-color: rgba(255, 242, 207, 0.4);
+  padding: 10px;
+  border-radius: 10px;
 }
 
 .col {
