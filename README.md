@@ -21,6 +21,10 @@ https://good-car-ideas.herokuapp.com/
 | :---------: | :---------: |
 |![profile index](https://i.imgur.com/Vb8JhGE.png "Profile index page") | ![individual user profile](https://i.imgur.com/FkObhXQ.png "profile page detail")
 
+| Some mobile view examples |  |  |
+| :---------: | :---------: | :---------: |
+|![profile index mobile view](https://i.imgur.com/enNnqJO.png "Profile index page mobile view") | ![idea index mobile view](https://i.imgur.com/mi2wvjZ.png "idea index mobile view") | ![idea detail mobile view](https://i.imgur.com/kFAtBLa.png "idea detail mobile view")
+
 # Planned Improvements
 * Improve mobile layout
 * Add a light/dark mode option
