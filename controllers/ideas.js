@@ -127,8 +127,8 @@ async function createReview(req, res) {
 }
 
 function deleteReview(req, res) {
-  console.log("oopsie doopsie")
   const idea = Idea.findById(req.params.id)
+  console.log("yikes", idea._id)
   Review.findById(req.params.id)
   .then(review => {
     if(review.contributor.equals(req.user.profile._id)) {
@@ -145,6 +145,24 @@ function deleteReview(req, res) {
     res.redirect("/ideas")
   })
 }
+
+
+
+// function deleteReview(req, res) {
+//   Idea.findById(req.params.ideaId)
+//   .then(idea => {
+//     const review = Review.findById(req.params.reviewId)
+//     review.remove({_id: req.params.reviewId})
+//     idea.save()
+//     .then(idea => {
+//       res.redirect(`/ideas/${Idea._id}`)
+//     })
+//   })
+//   .catch(err => {
+//     console.log(err)
+//     res.redirect("/ideas")
+//   })
+// }
 
 
 export {

@@ -77,28 +77,32 @@ section {
 }
 
 table {
-  table-layout: fixed;
-  width: 80vw;
+  width: 70vw;
 }
 
 th {
   font-size: 20px;
   text-align: left;
   padding: 5px 10px 5px 10px;
-  background-color: rgba(192, 54, 0, 0.3);
+  background-color: rgba(255, 242, 207, 0.5);
   border-radius: 5px;
 }
 
 td {
   font-size: 1.8rem;
   padding: 5px 10px 5px 10px;
-  background-color: rgba(192, 54, 0, 0.3);
+  background-color: rgba(192, 54, 0, 0.6);
   border-radius: 5px;
+}
+
+.table-delete-btn{
+  justify-content: center;
+  padding: 5px;
+  width: 40px
 }
 
 ul {
   list-style-type: none;
-  /* background-color: rgba(192, 54, 0, 0.5); */
   background-color: rgba(255, 242, 207, 0.5);
   border-radius: 10px;
   padding: 25px;
@@ -114,10 +118,6 @@ ul {
 a {
   color: rgb(70, 16, 0);
   padding: 0px 3px 0px 3px;
-}
-
-pre {
-  font-size: 1.4rem;
 }
 
 nav > a {
@@ -193,11 +193,16 @@ iframe {
 
 .card-img-top {
   border-radius: 50%;
-  size: 100%;
 }
 
 .card-title {
   text-align: center;
+}
+
+.card-body {
+  background-color: rgba(255, 242, 207, 0.5);
+  border-radius: 10px;
+  padding: 25px;
 }
 
 .profile-header {
@@ -244,12 +249,6 @@ iframe {
 .detail-view {
   margin: 5px;
   padding: 10px;
-}
-
-.table-delete-btn{
-  display: flex;
-  justify-content: center;
-  padding: 0px 10px 0px 10px;
 }
 
 th.detail-head {
