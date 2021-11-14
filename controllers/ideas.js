@@ -127,42 +127,20 @@ async function createReview(req, res) {
 }
 
 function deleteReview(req, res) {
-  const idea = Idea.findById(req.params.id)
-  console.log("yikes", idea._id)
-  Review.findById(req.params.id)
-  .then(review => {
-    if(review.contributor.equals(req.user.profile._id)) {
-      review.delete()
-      .then(() => {
-        res.redirect(`/ideas/${idea._id}`)
-      })
-    }  else {
-      throw new Error ("Uh oh, you're not allowed to do that here")
-    }
+  const idea = Idea.findById(req.params.ideaId)
+  .then(idea => {
+    const ideaReviews = idea.reviews
+    ideaReviews.remove({_id: req.params.reviewId})
+    idea.save()
+    .then(idea => {
+      res.redirect(`/ideas/${req.params.ideaId}`)
+    })
   })
   .catch(err => {
     console.log(err)
     res.redirect("/ideas")
   })
 }
-
-
-
-// function deleteReview(req, res) {
-//   Idea.findById(req.params.ideaId)
-//   .then(idea => {
-//     const review = Review.findById(req.params.reviewId)
-//     review.remove({_id: req.params.reviewId})
-//     idea.save()
-//     .then(idea => {
-//       res.redirect(`/ideas/${Idea._id}`)
-//     })
-//   })
-//   .catch(err => {
-//     console.log(err)
-//     res.redirect("/ideas")
-//   })
-// }
 
 
 export {
