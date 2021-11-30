@@ -15,7 +15,7 @@ https://good-car-ideas.herokuapp.com/
 
 | Share an idea! | Review other ideas! |
 | :---------: | :---------: |
-|![submission page screenshot](https://i.imgur.com/o8wsCvB.png "Idea index page") | ![idea detail screenshot](https://i.imgur.com/qctKczO.png "Detailed review")
+|![submission page screenshot](https://i.imgur.com/o8wsCvBl.png "Idea index page") | ![idea detail screenshot](https://i.imgur.com/1OocpsHl.png "Detailed review")
 
 | View other user profiles | See what they have contributed |
 | :---------: | :---------: |
