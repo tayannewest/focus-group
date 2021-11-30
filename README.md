@@ -23,7 +23,7 @@ https://good-car-ideas.herokuapp.com/
 
 | Some mobile view examples |  |  |
 | :---------: | :---------: | :---------: |
-|![profile index mobile view](https://i.imgur.com/enNnqJO.png "Profile index page mobile view") | ![idea index mobile view](https://i.imgur.com/mi2wvjZ.png "idea index mobile view") | ![idea detail mobile view](https://i.imgur.com/kFAtBLa.png "idea detail mobile view")
+|![profile index mobile view](https://i.imgur.com/C2jw04R.png "Profile index page mobile view") | ![idea index mobile view](https://i.imgur.com/at9honI.png "idea index mobile view") | ![idea detail mobile view](https://i.imgur.com/KwMUmrw.png "idea detail mobile view")
 
 # Planned Improvements
 * Improve mobile layout
