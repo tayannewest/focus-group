@@ -19,7 +19,7 @@ https://good-car-ideas.herokuapp.com/
 
 | View other user profiles | See what they have contributed |
 | :---------: | :---------: |
-|![profile index](https://i.imgur.com/Vb8JhGE.png "Profile index page") | ![individual user profile](https://i.imgur.com/FkObhXQ.png "profile page detail")
+|![profile index](https://i.imgur.com/TzPdFfql.png "Profile index page") | ![individual user profile](https://i.imgur.com/KCzqXUWl.png "profile page detail")
 
 | Some mobile view examples |  |  |
 | :---------: | :---------: | :---------: |
