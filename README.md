@@ -11,19 +11,19 @@ https://good-car-ideas.herokuapp.com/
 
 |Welcome Screen|
 | :---------: |
-|![game play screen](https://i.imgur.com/oFU7Oft.png "Welcome screen")|
+|![welcome screen](https://i.imgur.com/oFU7Oft.png "Welcome screen")|
 
-| Share an idea! | Leave a review! |
+| Share an idea! | Review other ideas! |
 | :---------: | :---------: |
-|![submission page screenshot](https://i.imgur.com/AHx2Fw0.png "Idea sbumission page") | ![idea detail screenshot](https://i.imgur.com/qctKczO.png "Detailed review")
+|![submission page screenshot](https://i.imgur.com/o8wsCvBl.png "Idea index page") | ![idea detail screenshot](https://i.imgur.com/1OocpsHl.png "Detailed review")
 
 | View other user profiles | See what they have contributed |
 | :---------: | :---------: |
-|![profile index](https://i.imgur.com/Vb8JhGE.png "Profile index page") | ![individual user profile](https://i.imgur.com/FkObhXQ.png "profile page detail")
+|![profile index](https://i.imgur.com/TzPdFfql.png "Profile index page") | ![individual user profile](https://i.imgur.com/KCzqXUWl.png "profile page detail")
 
 | Some mobile view examples |  |  |
 | :---------: | :---------: | :---------: |
-|![profile index mobile view](https://i.imgur.com/enNnqJO.png "Profile index page mobile view") | ![idea index mobile view](https://i.imgur.com/mi2wvjZ.png "idea index mobile view") | ![idea detail mobile view](https://i.imgur.com/kFAtBLa.png "idea detail mobile view")
+|![profile index mobile view](https://i.imgur.com/C2jw04R.png "Profile index page mobile view") | ![idea index mobile view](https://i.imgur.com/at9honI.png "idea index mobile view") | ![idea detail mobile view](https://i.imgur.com/KwMUmrw.png "idea detail mobile view")
 
 # Planned Improvements
 * Improve mobile layout
