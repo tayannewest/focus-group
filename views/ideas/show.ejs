@@ -50,9 +50,14 @@
               <td><%= review.contributor.name %></td>
               <td><%= review.content %></td>
               <td><%= review.goodIdea ? "good idea" : "no good idea" %> </td>
+              <% if (review.contributor.equals(user?.profile._id)) { %>
               <td class="table-delete-btn">
                 <form action="/ideas/<%= idea._id %>/reviews/<%= review._id %>?_method=DELETE" method="POST">
                   <button><i class="fas fa-trash-alt"></i></button>
+                <% } else { %>
+                  <td class="table-delete-btn">
+                      <button><i class="fas fa-car"></i></button>
+                <% } %>
                   </form>
                   </form>
               </td>
