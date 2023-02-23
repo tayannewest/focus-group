@@ -44,7 +44,7 @@ app.use(
   )
 )
 
-app.use('/favicon.ico', express.favicon('public/images/favicon.ico'))
+app.use('/favicon.ico', express.static('public/images/favicon.ico'))
 
 // session middleware
 app.use(
